@@ -27,3 +27,7 @@ explore: src_dlvry {}
 explore: src_files {}
 
 explore: src_master {}
+
+explore: cdf_agent_logout_master {}
+
+explore: cdf_salesforce_tasks_created_master {}
