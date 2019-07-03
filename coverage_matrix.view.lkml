@@ -100,13 +100,15 @@ measure: sumSF {
 }
 
 measure: minSF {
-  type: min
-  sql: ${TABLE}.SFMinDate ;;
+  type: date
+  sql: MIN(${TABLE}.SFMinDate) ;;
+  convert_tz: no
 }
 
   measure: maxSF {
-    type: min
-    sql: ${TABLE}.SFMaxDate ;;
+    type: date
+    sql: MAX(${TABLE}.SFMaxDate) ;;
+    convert_tz: no
   }
 
   measure: sumAgent {
@@ -115,13 +117,15 @@ measure: minSF {
   }
 
 measure: minAgent {
-    type: min
-    sql: ${TABLE}.AgentMinDate ;;
+    type: date
+    sql: MIN(${TABLE}.AgentMinDate) ;;
+  convert_tz: no
 }
 
   measure: maxAgent {
-    type: min
-     sql: ${TABLE}.AgentMaxDate ;;
+    type: date
+     sql: MAX(${TABLE}.AgentMaxDate) ;;
+    convert_tz: no
 }
 
   measure: count {
