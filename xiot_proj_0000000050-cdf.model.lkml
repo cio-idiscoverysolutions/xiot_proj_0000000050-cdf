@@ -26,4 +26,12 @@ explore: src_dlvry {}
 
 explore: src_files {}
 
-explore: src_master {}
+explore: src_master {
+  join: src_dlvry{
+    type: inner
+    sql_on: ${src_dlvry.scmst_id} = ${src_master.scmst_id};;
+    relationship: many_to_one
+    view_label: "SourceDetail"
+
+  }
+}
