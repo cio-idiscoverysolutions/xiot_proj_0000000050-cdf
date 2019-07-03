@@ -110,7 +110,7 @@ measure: minSF {
   }
 
   measure: sumAgent {
-    type: number
+    type: sum
     sql: ${TABLE}.AgentRecCount ;;
   }
 
