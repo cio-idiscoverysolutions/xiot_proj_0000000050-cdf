@@ -10,7 +10,7 @@ datagroup: xiot_proj_0000000050_cdf_default_datagroup {
 
 persist_with: xiot_proj_0000000050_cdf_default_datagroup
 
-# explore: cdf_table_stats {}
+ explore: cdf_table_stats {}
 
 explore: src_master {
   join: src_dlvry{
@@ -24,9 +24,9 @@ explore: src_master {
 
 # - explore: cdf_catalog
 
-# explore: cdf_agentlogout_master{}
+ explore: cdf_agent_logout_master{}
 
-# explore: CDF_SalesforceTasksCreated_MASTER{}
+ explore: cdf_salesforce_tasks_created_master{}
 
 # - explore: cdf_convert
 
@@ -40,18 +40,18 @@ explore: src_master {
 # - explore: log
 
 
-#explore: productions {
-#  join: productionlog {
-#    type:  inner
-#    relationship: one_to_many
-#    sql_on: ${productions.prod_id} = ${productions.prod_id} ;;
-#  }
-#  join: production_details{
-#    type:  inner
-#    relationship: one_to_many
-#    sql_on: ${productions.prod_id} = ${production_details.prod_id} ;;
-#  }
-#}
+explore: productions {
+  join: productionlog {
+    type:  inner
+    relationship: one_to_many
+    sql_on: ${productions.prod_id} = ${productions.prod_id} ;;
+  }
+  join: production_details{
+    type:  inner
+    relationship: one_to_many
+    sql_on: ${productions.prod_id} = ${production_details.prod_id} ;;
+  }
+}
 
 # - explore: src_dlvry
 
@@ -59,15 +59,15 @@ explore: src_master {
 
 # - explore: src_master
 
-#explore: udf_udf {
-#  join: dim_ppl {
-#    type: inner
-#    relationship: many_to_one
-#    sql_on: ${udf_udf.ppl_id} = ${dim_ppl.ppl_id} ;;
-#  }
-#  join: dim_loc {
-#    type: left_outer
-#    relationship: many_to_one
-#    sql_on: ${udf_udf.loc_id} = ${dim_loc.loc_id} ;;
-#  }
-#}
+explore: udf_udf {
+  join: dim_ppl {
+    type: inner
+    relationship: many_to_one
+    sql_on: ${udf_udf.ppl_id} = ${dim_ppl.ppl_id} ;;
+  }
+  join: dim_loc {
+    type: left_outer
+    relationship: many_to_one
+    sql_on: ${udf_udf.loc_id} = ${dim_loc.loc_id} ;;
+  }
+}
