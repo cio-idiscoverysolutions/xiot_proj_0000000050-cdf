@@ -1,5 +1,5 @@
 view: productions {
-  sql_table_name: [xiot_proj_0000000042-PROD].[dbo].[Productions];;
+  sql_table_name: [xiot_proj_0000000050-PROD].[dbo].[Productions];;
 
   dimension: prod_id {
     type: number
