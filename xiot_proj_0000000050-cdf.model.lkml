@@ -10,7 +10,7 @@ datagroup: xiot_proj_0000000050_cdf_default_datagroup {
 
 persist_with: xiot_proj_0000000050_cdf_default_datagroup
 
- explore: cdf_table_stats {}
+explore: cdf_table_stats {}
 
 explore: src_master {
   join: src_dlvry{
@@ -18,9 +18,9 @@ explore: src_master {
     sql_on: ${src_dlvry.scmst_id} = ${src_master.scmst_id};;
     relationship: many_to_one
     view_label: "SourceDetail"
-
   }
 }
+
 
 # - explore: cdf_catalog
 
