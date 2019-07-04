@@ -71,3 +71,5 @@ explore: udf_udf {
     sql_on: ${udf_udf.loc_id} = ${dim_loc.loc_id} ;;
   }
 }
+
+explore: coverage_matrix {}
