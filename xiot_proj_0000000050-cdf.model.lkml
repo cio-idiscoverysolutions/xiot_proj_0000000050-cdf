@@ -28,6 +28,14 @@ explore: src_master {
 
  explore: cdf_salesforce_tasks_created_master{}
 
+
+explore: cdf_kronos_punch_details_master {}
+explore: cdf_observeit_master {}
+explore: cdf_sales_force_login_history__master {}
+
+
+
+
 # - explore: cdf_convert
 
 
