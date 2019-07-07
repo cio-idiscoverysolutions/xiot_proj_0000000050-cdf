@@ -33,7 +33,8 @@ explore: cdf_kronos_punch_details_master {}
 explore: cdf_observeit_master {}
 explore: cdf_sales_force_login_history__master {}
 
-
+explore: cdf_kronos_timecard_audits_master {}
+explore: cdf_s2_access_data_master {}
 
 
 # - explore: cdf_convert
