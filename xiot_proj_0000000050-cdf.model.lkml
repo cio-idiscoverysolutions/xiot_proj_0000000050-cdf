@@ -24,9 +24,12 @@ explore: src_master {
 
 # - explore: cdf_catalog
 
- explore: cdf_agent_logout_master{}
 
- explore: cdf_salesforce_master{}
+
+ explore: cdf_agent_logout_master{}
+# -  explore: cdf_salesforce_master{}
+
+explore: my_salesforce {}
 explore: cdf_class_list_master{}
 
 
