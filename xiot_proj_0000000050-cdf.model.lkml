@@ -26,7 +26,8 @@ explore: src_master {
 
  explore: cdf_agent_logout_master{}
 
- explore: cdf_salesforce_tasks_created_master{}
+ explore: cdf_salesforce_master{}
+explore: cdf_class_list_master{}
 
 
 explore: cdf_kronos_punch_details_master {}
