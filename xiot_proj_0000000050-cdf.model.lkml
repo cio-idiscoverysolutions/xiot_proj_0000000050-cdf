@@ -30,7 +30,9 @@ explore: src_master {
 # -  explore: cdf_salesforce_master{}
 
 explore: my_salesforce {}
-explore: cdf_class_list_master{}
+# - explore: cdf_class_list_master{}
+
+explore: my_classlist {}
 
 
 explore: cdf_kronos_punch_details_master {}
