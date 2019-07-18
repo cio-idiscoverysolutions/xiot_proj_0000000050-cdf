@@ -21,6 +21,8 @@ explore: src_master {
   }
 }
 
+explore: my_classlist_sqlrunner {}
+
 
 # - explore: cdf_catalog
 
