@@ -1,13 +1,31 @@
 view: cdf_kronos_punch_details_master {
   sql_table_name: dbo.CDF_KronosPunchDetails_MASTER ;;
 
-  dimension: actualin {
-    type: string
+  dimension_group: actualin {
+    type: time
+    timeframes: [
+      raw,
+      time,
+      date,
+      week,
+      month,
+      quarter,
+      year
+    ]
     sql: ${TABLE}.actualin ;;
   }
 
-  dimension: actualout {
-    type: string
+  dimension_group: actualout {
+    type: time
+    timeframes: [
+      raw,
+      time,
+      date,
+      week,
+      month,
+      quarter,
+      year
+    ]
     sql: ${TABLE}.actualout ;;
   }
 
@@ -187,23 +205,59 @@ view: cdf_kronos_punch_details_master {
     sql: ${TABLE}.regularsalary ;;
   }
 
-  dimension: roundedin {
-    type: string
+  dimension_group: roundedin {
+    type: time
+    timeframes: [
+      raw,
+      time,
+      date,
+      week,
+      month,
+      quarter,
+      year
+    ]
     sql: ${TABLE}.roundedin ;;
   }
 
-  dimension: roundedout {
-    type: string
+  dimension_group: roundedout {
+    type: time
+    timeframes: [
+      raw,
+      time,
+      date,
+      week,
+      month,
+      quarter,
+      year
+    ]
     sql: ${TABLE}.roundedout ;;
   }
 
-  dimension: scheduledin {
-    type: string
+  dimension_group: scheduledin {
+    type: time
+    timeframes: [
+      raw,
+      time,
+      date,
+      week,
+      month,
+      quarter,
+      year
+    ]
     sql: ${TABLE}.scheduledin ;;
   }
 
-  dimension: scheduledout {
-    type: string
+  dimension_group: scheduledout {
+    type: time
+    timeframes: [
+      raw,
+      time,
+      date,
+      week,
+      month,
+      quarter,
+      year
+    ]
     sql: ${TABLE}.scheduledout ;;
   }
 
@@ -235,6 +289,62 @@ view: cdf_kronos_punch_details_master {
   dimension: workrule {
     type: string
     sql: ${TABLE}.workrule ;;
+  }
+
+  dimension_group: xiot_actualin {
+    type: time
+    timeframes: [
+      raw,
+      time,
+      date,
+      week,
+      month,
+      quarter,
+      year
+    ]
+    sql: ${TABLE}.xiot_actualin ;;
+  }
+
+  dimension_group: xiot_actualin_et {
+    type: time
+    timeframes: [
+      raw,
+      time,
+      date,
+      week,
+      month,
+      quarter,
+      year
+    ]
+    sql: ${TABLE}.xiot_actualin_ET ;;
+  }
+
+  dimension_group: xiot_actualout {
+    type: time
+    timeframes: [
+      raw,
+      time,
+      date,
+      week,
+      month,
+      quarter,
+      year
+    ]
+    sql: ${TABLE}.xiot_actualout ;;
+  }
+
+  dimension_group: xiot_actualout_et {
+    type: time
+    timeframes: [
+      raw,
+      time,
+      date,
+      week,
+      month,
+      quarter,
+      year
+    ]
+    sql: ${TABLE}.xiot_actualout_ET ;;
   }
 
   measure: count {
