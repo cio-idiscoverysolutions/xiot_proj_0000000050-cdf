@@ -7,6 +7,7 @@ view: cdf_table_stats {
     sql: ${TABLE}.ID ;;
   }
 
+
   dimension: blank_or_null_values {
     type: number
     sql: ${TABLE}.BlankOrNullValues ;;
