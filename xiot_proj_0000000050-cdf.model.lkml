@@ -12,6 +12,7 @@ persist_with: xiot_proj_0000000050_cdf_default_datagroup
 
 explore: cdf_table_stats {}
 
+
 explore: src_master {
   join: src_dlvry{
     type: inner
