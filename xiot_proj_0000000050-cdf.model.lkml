@@ -90,4 +90,4 @@ explore: udf_udf {
   }
 }
 
-explore: coverage_matrix {}
+explore: coverage_matrix_new {}
